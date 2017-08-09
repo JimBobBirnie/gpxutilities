@@ -1,7 +1,8 @@
 (ns gpxutilities.core-test
-  (:require [clojure.test :refer :all]
+  (:require [midje.sweet :refer :all]
             [gpxutilities.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(facts "about the core functionality"
+  (fact "can measure the distance between points."
+  1 => 1
+  ))
