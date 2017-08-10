@@ -15,3 +15,8 @@
 
 (defn lon-distance-between [from to]
   )
+
+(defn angular-distance-between [ang1 ang2]
+  "calculates the angular distance between two points expressed in degrees in radians"
+  (Math/abs (Math/toRadians (- ang1 ang2)))
+)
