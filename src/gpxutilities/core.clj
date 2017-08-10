@@ -27,3 +27,7 @@
   "calculates the surface distance between two points from the angular distance"
   (* angle earth-mean-radius)
 )
+
+(defn pythagorean-approximation [surface-distance1 surface-distance2]
+  (Math/sqrt (+ (* surface-distance1 surface-distance1) (* surface-distance2 surface-distance2)))
+)
