@@ -22,3 +22,9 @@
       (gpxutilities.core/angular-distance-between 5 5) => 0.0
     )
   )
+
+  (facts "about surface distance"
+    (fact "one radian is about mean-earth-radius"
+      (gpxutilities.core/surface-distance 1) => gpxutilities.core/earth-mean-radius
+    )
+  )
