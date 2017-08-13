@@ -29,3 +29,9 @@
   (facts "about Java sqrt"
     (fact "about square roots"
     (java.lang.Math/sqrt 16) => 4.0))
+
+  (facts "about haversine function"
+    (fact "haversince 0 is 0"
+      (Math/cos 0) => 1.0
+      (/ 1 2) => 1/2
+      (gpxutilities.core/haversine 0) => 0.0))

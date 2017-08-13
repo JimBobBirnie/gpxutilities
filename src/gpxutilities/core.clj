@@ -31,3 +31,6 @@
 (defn pythagorean-approximation [surface-distance1 surface-distance2]
   (Math/sqrt (+ (* surface-distance1 surface-distance1) (* surface-distance2 surface-distance2)))
 )
+
+(defn haversine [theta]
+  (/ (- 1 (Math/cos theta)) 2))
